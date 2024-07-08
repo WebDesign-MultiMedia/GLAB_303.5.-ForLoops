@@ -1,3 +1,7 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -20,8 +24,29 @@ public class Main {
         }
         System.out.println("Sum = " + sum);
 
+
+
+
+
+        // Examole 3
+        String original, reverse = "";
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a string/number to check if it is a palindrome");
+
+            original = in.nextLine();
+            int length = original.length();
+            for (int ii = length - 1; ii >= 0; ii--){
+                reverse = reverse + original.charAt(ii);
+                if(original.equals(reverse)){
+                    System.out.println("The Entered string/number is a plaindrome.");
+                } else {
+                    System.out.println("The Entered string/number isn't a palindrome.");
+                }
+            }
+
+
+            //Example 4
+
+
     }
-
-
-    // Examole 3
 }
