@@ -11,7 +11,17 @@ public class Main {
         }
 
 
+        //Example 2
+        int sum = 0;
+        int m = 1000;
+
+        for (int i = 1; i <= m; ++i){
+            sum += i;
+        }
+        System.out.println("Sum = " + sum);
+
     }
 
 
+    // Examole 3
 }
